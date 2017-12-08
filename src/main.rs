@@ -1,9 +1,9 @@
-#![feature(rustc_private)]
 
-extern crate rustc_trans;
 extern crate clap;
+extern crate flate2;
 
-use rustc_trans::back::bytecode;
+pub mod bytecode;
+
 use clap::{App, Arg};
 
 use std::fs::File;
